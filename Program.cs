@@ -42,6 +42,12 @@ namespace ProgrammingPatternExamples
 
             TupleExample tuple = new TupleExample();
             tuple.Run();
+
+            CollectionExamples collection = new CollectionExamples();
+            collection.Run();
+
+            LambdaExpressionExamples lambda = new LambdaExpressionExamples();
+            lambda.Run();
         }
     }
 }
