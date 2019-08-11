@@ -49,6 +49,7 @@
     <Compile Include="DecoratorPattern\DecoratorExample.cs" />
     <Compile Include="FluentInterfaces\Fluent.cs" />
     <Compile Include="DecoratorPattern\PredicatedDecoratorExample.cs" />
+    <Compile Include="DecoratorPattern\ProfiledDecoratorExample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StrategyPattern\Stratagy.cs" />

@@ -36,6 +36,9 @@ namespace ProgrammingPatternExamples
 
             PredicatedDecoratorExample predicator = new PredicatedDecoratorExample();
             predicator.Run();
+
+            ProfiledDecoratorExample profiler = new ProfiledDecoratorExample();
+            profiler.Run();
         }
     }
 }
