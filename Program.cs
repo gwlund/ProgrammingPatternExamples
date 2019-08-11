@@ -39,6 +39,9 @@ namespace ProgrammingPatternExamples
 
             ProfiledDecoratorExample profiler = new ProfiledDecoratorExample();
             profiler.Run();
+
+            TupleExample tuple = new TupleExample();
+            tuple.Run();
         }
     }
 }
