@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace ProgrammingPatternExamples
 {
-    public class StrubgExamples
+    public class StringExamples
     {
         public void Run()
         {

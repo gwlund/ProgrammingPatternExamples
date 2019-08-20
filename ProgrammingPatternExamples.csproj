@@ -48,6 +48,7 @@
     <Compile Include="CollectionExamples\CollectionExamples.cs" />
     <Compile Include="CompositePattern\CompositeExample.cs" />
     <Compile Include="DecoratorPattern\DecoratorExample.cs" />
+    <Compile Include="ExpressionBodyExamples\ExpressionBodyExamples.cs" />
     <Compile Include="FluentInterfaces\Fluent.cs" />
     <Compile Include="DecoratorPattern\PredicatedDecoratorExample.cs" />
     <Compile Include="DecoratorPattern\ProfiledDecoratorExample.cs" />
