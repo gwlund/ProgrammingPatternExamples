@@ -23,7 +23,7 @@ namespace ProgrammingPatternExamples
             //Tuples can have more than two elements and can be named
             var tuple1 = (list.Count, Min: list.Min(), Max: list.Max());
 
-            Console.WriteLine(tuple1.Count);
+            //Console.WriteLine(tuple1.Count);
             Console.WriteLine(tuple1.Min); Console.WriteLine(tuple1.Max);
 
             var tuple2 = (x: 5, 10);

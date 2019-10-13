@@ -17,7 +17,7 @@ namespace ProgrammingPatternExamples
         public int Foo => 0;
         
         // Declares a read/write public field
-        public int Foo = 0;
+        public int Foo2 = 0;
 
         public void Run()
         {

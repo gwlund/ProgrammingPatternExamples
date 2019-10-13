@@ -11,6 +11,10 @@ namespace ProgrammingPatternExamples
     {
         static void Main(string[] args)
         {
+            //Array example
+            ArrayExample ar = new ArrayExample();
+            ar.Run();
+
             //Fluent example
             FluentExample fluent = new FluentExample(new FluentImplementation());
             fluent.Run();

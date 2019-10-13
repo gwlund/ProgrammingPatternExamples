@@ -22,14 +22,14 @@ namespace ProgrammingPatternExamples
             }
 
             //Query expression
-            IEnumerable<string> query = from word in words      //Introdcue range variable from clause
+            IEnumerable<string> query0 = from word in words      //Introdcue range variable from clause
                                         where word.Length > 4   //Use the range variable in the following clauses
                                         orderby word
                                         select word.ToUpper();
 
             //Two range variables
             //Query expression
-            IEnumerable<string> query = from word in words //Introdcue range variable from clause
+            IEnumerable<string> query1 = from word in words //Introdcue range variable from clause
                 let length = word.Length
                 where length > 4 //Use the range variable in the following clauses
                 orderby length
@@ -37,12 +37,12 @@ namespace ProgrammingPatternExamples
 
             //Filtering options
             //Query expression
-            IEnumerable<string> query = from word in words      //Introdcue range variable from clause
+            IEnumerable<string> query2 = from word in words      //Introdcue range variable from clause
                                         where word.Length > 4   //Use the range variable in the following clauses
                                         select word;
 
             //Simplier syntax
-            IEnumerable<string> query = words.Where(word => word.Length > 4);
+            IEnumerable<string> query3 = words.Where(word => word.Length > 4);
 
 
 
