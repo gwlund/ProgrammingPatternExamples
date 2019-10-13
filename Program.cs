@@ -11,6 +11,11 @@ namespace ProgrammingPatternExamples
     {
         static void Main(string[] args)
         {
+
+            //Leet code examples
+            LeetCodeProblems lc = new LeetCodeProblems();
+            lc.Run();
+
             //Array example
             ArrayExample ar = new ArrayExample();
             ar.Run();

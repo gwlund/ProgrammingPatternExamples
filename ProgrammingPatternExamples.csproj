@@ -54,6 +54,7 @@
     <Compile Include="DecoratorPattern\PredicatedDecoratorExample.cs" />
     <Compile Include="DecoratorPattern\ProfiledDecoratorExample.cs" />
     <Compile Include="LambdaExamples\LambdaExpressionExamples.cs" />
+    <Compile Include="LeetCodeProblems\LeetCodeProblems.cs" />
     <Compile Include="LinqExamples\LinqExamples.cs" />
     <Compile Include="NullableExamples\NullableExamples.cs" />
     <Compile Include="Program.cs" />
