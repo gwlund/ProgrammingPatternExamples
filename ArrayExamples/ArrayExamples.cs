@@ -67,6 +67,8 @@ namespace ProgrammingPatternExamples
 
             int[] ret = TwoSum(nums, target);
 
+            int[] ret2 = TwoSumHash(nums, target);
+
         }
 
         public int[] TwoSum(int[] nums, int target)
@@ -87,6 +89,30 @@ namespace ProgrammingPatternExamples
             }
 
             return null;
+        }
+
+        public int[] TwoSumHash(int[] nums, int target)
+        {
+            Dictionary<int , int> map = new Dictionary<int, int>();
+
+            //Two pass solution
+            for (int i = 0; i < nums.Length; i++)
+            {
+                map.Add(nums[i], i);
+            }
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int complement = target - nums[i];
+
+                if (map.ContainsKey(complement) && map[complement] != i)
+                {
+                    return new int[] { i, map[complement] };
+                }
+            }
+
+            return null;
+
         }
     }
 }
