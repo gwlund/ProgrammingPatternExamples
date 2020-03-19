@@ -25,6 +25,12 @@ namespace ProgrammingPatternExamples
         public Customer(string name) => Name = name;
         public string Name { get; set; }
         //public Address? Address { get; set; }
+
+        public string State { 
+            get => State;
+            set => State =
+                value ?? throw new ArgumentNullException(paramName: nameof(value), message: "Set State cannot be null");
+        }
     }
 
     public class Address
