@@ -33,6 +33,9 @@ namespace ProgrammingPatternExamples
             tuple2.x = 100;
             Console.WriteLine(tuple2.Item1); //First element referred by position
 
+            //Example #2
+            Point point = new Point(3, 5);
+
         }
 
         private (int min, int max) MinMaxLinq(IEnumerable<int> source)
@@ -71,5 +74,28 @@ namespace ProgrammingPatternExamples
             }
 
         }
+    }
+
+    public class Point
+    {
+
+        public double X { get; set; }
+        private double Y { get; set; }
+
+        //Efficient use of tuples in constructor
+        public Point(int x, int y) => (X, Y) = (x, y);
+
+        public static bool operator ==(Point left, Point right) =>
+            (left.X, left.Y) == (right.X, left.Y);
+
+        public static bool operator !=(Point left, Point right) => !(left == right);
+
+        //Nullable reference types only supported in C# 8.0 (.NET 4.8 = C# 7.3)
+        //public override bool Equals(object? obj) =>
+        //    (obj is Point otherPT)
+        //        ? this == otherPT
+        //        : false;
+
+        public void SwapPoints() => (X, Y) = (Y, X);  //No temp variables needed
     }
 }
