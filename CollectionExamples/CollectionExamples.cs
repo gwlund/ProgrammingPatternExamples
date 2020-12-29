@@ -15,6 +15,8 @@ namespace ProgrammingPatternExamples
                     { "Abbey Road", 1970 }
                 };
 
+            var revolverYear = releaseYears["Revolver"];
+
             //Use anonoymous types to populate a collection
             var players = new[]
             {
