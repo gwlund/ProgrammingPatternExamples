@@ -6,6 +6,22 @@ namespace ProgrammingPatternExamples
 {
     public class PropertyExamples
     {
+        //Old skole with backing field
+        private int _back;
+
+        public int Count
+        {
+            get
+            {
+                return _back;
+            }
+            set
+            {
+                _back = value;
+            }
+        }  
+        
+        
         //Read only properties
         public double X { get; }
         public double Y { get; }
