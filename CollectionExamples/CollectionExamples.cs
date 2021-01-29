@@ -15,6 +15,11 @@ namespace ProgrammingPatternExamples
                     { "Abbey Road", 1970 }
                 };
 
+            var listSample = new List<int>();
+            
+            listSample.Add(3);
+            listSample.Add(3);
+
             var revolverYear = releaseYears["Revolver"];
 
             //Use anonoymous types to populate a collection
